@@ -13,7 +13,7 @@
 /* ⢸⡇⠀⠀⠀Fichier : vector.h                                ⠀⠀⠐⠂⠀⢸⣿⠁⣰⣿⡟⠀⠀⢸⡆⠀⠀⠀⢀⡴⠋⢹⡟⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇ */
 /* ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠘⣷⣼⡟⢻⠀⠀⠀⠈⢷⠀⠀⠀⠈⠀⠀⢀⡇⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇ */
 /* ⢸⡇⠀⠀⠀Creation: 2026/11/18 02:04:20                     ⠀⠀⠐⠂⠀⠀⢻⡗⠀⠘⡆⠐⣄⠀⠈⢷⡀⠀⣠⣤⣶⠟⠁⠀⠀⠀⠀⢠⡞⠛⢦⣄⠀⠀⠀⠀⠀⢸⡇ */
-/* ⢸⡇⠀⠀⠀M.a.j.  : 2026/11/18 03:11:42                     ⠀⠀⠐⠂⠀⠀⠈⢷⡀⠀⠘⢤⠀⠙⠢⣄⣙⠮⣿⣿⣿⣶⣶⣤⣤⣤⡴⠋⠀⠀⠀⠈⠛⠶⣄⡀⠀⢸⡇ */
+/* ⢸⡇⠀⠀⠀M.a.j.  : 2026/11/18 07:14:33                     ⠀⠀⠐⠂⠀⠀⠈⢷⡀⠀⠘⢤⠀⠙⠢⣄⣙⠮⣿⣿⣿⣶⣶⣤⣤⣤⡴⠋⠀⠀⠀⠈⠛⠶⣄⡀⠀⢸⡇ */
 /* ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠀⠀⠀⢷⡄⠀⠀⢙⣢⣤⣤⣬⣭⣶⣯⣿⣿⣯⣿⣻⣏⣿⣶⣀⣠⣤⣤⡴⠞⢩⡿⠀⢸⡇ */
 /* ⢸⡇⠀⠀⠀Propriete : Ticasali⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠀⠀⠀⠀⠻⣶⣾⣿⣿⣿⢿⣿⣟⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⢀⣴⠟⠀⠀⢸⡇ */
 /* ⢸⡇⠀⠀⠀Copyright (c) 2026 Ticasali.⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣷⣿⣿⢿⣟⣛⣛⣭⡭⠽⠶⠛⠋⠉⠀⠀⣀⣴⠟⠀⠀⠀⠀⢸⡇ */
@@ -23,3 +23,27 @@
 /* ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⠖⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ */
 
 #pragma once
+
+#include <stdint.h>
+#include <stdbool.h>
+
+#define ELEM_COUNT_SPACE 8
+#define ELEM_MAX_SPACE 8
+#define HEADER_SIZE (ELEM_COUNT_SPACE + ELEM_MAX_SPACE)
+
+struct header
+{
+	uint64_t elem_count;
+	uint64_t elem_max;
+};
+
+void		*vector_init(uint32_t elem_size, uint64_t base_size);
+
+bool		vector_push(void **vec, void *data, uint64_t elem_count, uint64_t elem_size);
+bool		vector_insert_pos(void **vec, void *data, uint64_t elem_count, uint64_t elem_size, uint64_t pos);
+
+void		clc_vector_free(void *vec);
+
+# define clc_vector_init(type, base_size) vector_init(sizeof(type), base_size)
+# define clc_vector_push(vec, data, elem_count) clc_vector_push_back((void **)&vec, data, elem_count, sizeof(*vec))
+# define clc_vector_insert_pos(vec, data, elem_count, pos) vector_insert_pos((void **)&vec, data, elem_count, sizeof(*vec), pos)

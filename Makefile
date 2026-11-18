@@ -13,7 +13,7 @@
 # ⢸⡇⠀⠀⠀Fichier : Makefile                                ⠀⠀⠐⠂⠀⢸⣿⠁⣰⣿⡟⠀⠀⢸⡆⠀⠀⠀⢀⡴⠋⢹⡟⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
 # ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠘⣷⣼⡟⢻⠀⠀⠀⠈⢷⠀⠀⠀⠈⠀⠀⢀⡇⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇
 # ⢸⡇⠀⠀⠀Creation: 2026/11/17 00:22:39                     ⠀⠀⠐⠂⠀⠀⢻⡗⠀⠘⡆⠐⣄⠀⠈⢷⡀⠀⣠⣤⣶⠟⠁⠀⠀⠀⠀⢠⡞⠛⢦⣄⠀⠀⠀⠀⠀⢸⡇
-# ⢸⡇⠀⠀⠀M.a.j.  : 2026/11/18 03:10:27                     ⠀⠀⠐⠂⠀⠀⠈⢷⡀⠀⠘⢤⠀⠙⠢⣄⣙⠮⣿⣿⣿⣶⣶⣤⣤⣤⡴⠋⠀⠀⠀⠈⠛⠶⣄⡀⠀⢸⡇
+# ⢸⡇⠀⠀⠀M.a.j.  : 2026/11/18 07:11:02                     ⠀⠀⠐⠂⠀⠀⠈⢷⡀⠀⠘⢤⠀⠙⠢⣄⣙⠮⣿⣿⣿⣶⣶⣤⣤⣤⡴⠋⠀⠀⠀⠈⠛⠶⣄⡀⠀⢸⡇
 # ⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠀⠀⠀⢷⡄⠀⠀⢙⣢⣤⣤⣬⣭⣶⣯⣿⣿⣯⣿⣻⣏⣿⣶⣀⣠⣤⣤⡴⠞⢩⡿⠀⢸⡇
 # ⢸⡇⠀⠀⠀Propriete : Ticasali⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠀⠀⠀⠀⠻⣶⣾⣿⣿⣿⢿⣿⣟⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠛⠉⢀⣴⠟⠀⠀⢸⡇
 # ⢸⡇⠀⠀⠀Copyright (c) 2026 Ticasali.⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠂⠀⠀⠀⠀⠀⠀⠈⠻⣿⣿⣷⣿⣿⢿⣟⣛⣛⣭⡭⠽⠶⠛⠋⠉⠀⠀⣀⣴⠟⠀⠀⠀⠀⢸⡇
@@ -22,38 +22,40 @@
 # ⠀⠈⠻⣦⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣶⠚⠋⠙⠓⢶⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⠞⠁⠀
 # ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⠖⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
-NAME = c_light_core_library.a
+NAME 		= c_light_core_library.a
 
-SRCDIR = src
-OBJDIR = .obj
-INCDIR = include
+SRCDIR 		= src
+OBJDIR 		= .obj
+INCDIR 		= include
 
-SRCS = test.c 		\
+SRCS 		= $(addprefix $(SRCDIR)/, \
+				vector/get_header.c)
 
-OBJS = $(patsubst %.c,$(OBJDIR)/%.o,$(SRCS))
+OBJS 		= $(patsubst %.c,$(OBJDIR)/%.o,$(SRCS))
+DEPS 		= $(OBJS:.o=.d)
 
-CFLAGS = -Werror -Wextra -Wall -pedantic -MD -MP -I $(INCDIR) -g3
-AR = ar -rcs
-DEPFLAGS = -MMD -MP
+CFLAGS 		= -Werror -Wextra -Wall -pedantic -MD -MP -I $(INCDIR) -g3
+AR 			= ar -rcs
+DEPFLAGS 	= -MMD -MP
 
-$(OBJDIR)/%.o: $(SRCDIR)/%.c
-	@mkdir -p $(dir $@)
-	$(CC) $(CFLAGS) -c $< -o $@
+$(OBJDIR)/%.o: %.c
+			@mkdir -p $(dir $@)
+			$(CC) $(CFLAGS) -c $< -o $@
 
-all: $(NAME)
+$(NAME): 	$(OBJS)
+			$(AR) $(NAME) $(OBJS)
 
-$(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)
+all: 		$(NAME)
 
 clean:
-	rm -rf $(OBJDIR)
+			rm -rf $(OBJDIR)
 
-fclean: clean
-	rm -f $(NAME)
+fclean: 	clean
+			rm -f $(NAME)
 
-re: fclean
-	make all
+re: 		fclean
+			make all
 
--include $(OBJS:.o=.d)
+-include 	$(DEPS)
 
-.PHONY: all clean fclean re
+.PHONY: 	all clean fclean re
